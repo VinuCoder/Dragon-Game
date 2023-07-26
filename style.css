@@ -33,7 +33,7 @@ body{
     height: 15vh;
     position: absolute;
     bottom: 3vh;
-    left: 80vw;
+    left: 100vw;
 }
 .gameover{
     position: relative;

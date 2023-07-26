@@ -55,20 +55,23 @@ setInterval(() => {
         }, 1000);
     }
     else if (offsetX < 145 && cross) {
-        score += 1;
-        updatescore(score);
+        // Update score
+       score += 1;
+       updatescore(score);
         cross = false;
         setTimeout(() => {
             cross = true
-        }, 200);
+        }, 600);
+
+        // Increase speed of obstacle with time
         setTimeout(() => {
             aniDur = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
             newDur = aniDur - 0.1;
             obstacle.style.animationDuration = newDur + "s";
-        }, 700);
+        }, 400);
     }
 }, 10);
 
 function updatescore(score) {
-    scoreCont.innerHTML = "Your Score: " + score
+    scoreCont.innerHTML = "Your Score : " + score
 }
