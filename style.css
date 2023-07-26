@@ -6,7 +6,6 @@ body{
     overflow: hidden;
 }
 .gamecontainer{
-    background-color: red;
     width: 100vw;
     height: 100vh;
     background-image: url("background.jpg");
